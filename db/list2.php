@@ -30,7 +30,7 @@ if (!isset($name) || !isset($password)) {
     }
 
     $stmt = $mysql->prepare('SELECT COUNT(*) FROM auth WHERE name = ? AND pass = ?');
-    $stmt->bind_param('ss', $name, $password);
+    $stmt->bind_param('ss', $name, crypt($password,'22'));
     $stmt->execute();
     $stmt->bind_result($count);
     $stmt->fetch();

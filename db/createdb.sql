@@ -11,5 +11,5 @@ CREATE TABLE auth (
 
 -- Добавляем пользователей с простыми паролями
 INSERT INTO auth (name, pass) VALUES
-('user', 'pass'),
-('test', 'test');
+('user', '22u9/ctUbdo9E'),
+('test', '22g0LE.ThdPFo');
