@@ -8,8 +8,3 @@ CREATE TABLE auth (
     pass VARCHAR(255) NOT NULL,
     PRIMARY KEY (name)
 );
-
--- Добавляем пользователей с простыми паролями
-INSERT INTO auth (name, pass) VALUES
-('user', '22u9/ctUbdo9E'),
-('test', '22g0LE.ThdPFo');
